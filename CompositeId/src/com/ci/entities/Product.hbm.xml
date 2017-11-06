@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Feb 10, 2017 12:37:25 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.ci.entities.Product" table="PRODUCT">
+        <id name="productid" type="int">
+            <column name="PRODUCTID" />
+            <generator class="assigned" />
+        </id>
+        <property name="batchcode" type="java.lang.String">
+            <column name="BATCHCODE" />
+        </property>
+        <property name="productname" type="java.lang.String">
+            <column name="PRODUCTNAME" />
+        </property>
+        <property name="manifacture" type="java.lang.String">
+            <column name="MANIFACTURE" />
+        </property>
+        <property name="manifacturedate" type="java.util.Date">
+            <column name="MANIFACTUREDATE" />
+        </property>
+        <property name="amount" type="float">
+            <column name="AMOUNT" />
+        </property>
+    </class>
+</hibernate-mapping>
